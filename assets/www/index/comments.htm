@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>立泳教學</title>
+		<meta name="viewport" content="width=device-width, height=device-height , initial-scale=1, maximum-scale=1.0, user-scalable=no"> 
+		 <link rel="stylesheet" href="includes/jquery.mobile-1.3.1.min.css" />
+		 <script src="includes/jquery.js"></script>
+		 <script src="includes/jquery.mobile-1.3.1.min.js"></script>
+	</head>
+	<body>	
+		<div data-role="page" id="comments" data-title="意見反饋">
+
+					<div data-role="header">
+						<h1>意見反饋</h1>
+						<a href="#" data-rel="back" data-icon="arrow-l" >返回</a>
+				</div>
+			<div data-role="content">
+            <form id="comment_form">
+                    <input type="hidden" name="user_id" value=""/>
+                    <textarea id="text_area_input" name="comment" placeholder="Enter a comment here."></textarea>
+                    <input type="submit" id="submit_comment" name="submit_comment" value="Post Comment"/>
+             </form>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<!-- <div data-role="navbar">
+					<ul>
+						<li><a href="index.htm#news" data-icon="info">長泳消息</a></li>
+						<li><a href="index.htm#locations" data-icon="info">附近泳池</a></li>
+						<li><a href="index.htm#tutorials" data-icon="info">游泳教學</a></li>
+						<li><a href="index.htm#lifeguard" data-icon="grid">救生訓練</a></li>
+						<li><a href="index.htm#suggestion" data-icon="grid">意見反饋</a></li>
+					</ul>
+				</div>/navbar -->
+			<ul data-role="listview" data-theme="e"> 
+			<li data-icon="false"><a href="#" >   <img src="http://tw.bid.yimg.com/ac/38/22/1247523021-ac-0065xf9x0600x0450-s.jpg" style="height: 100%;"  />長泳浮板(日月潭、外木山、烏石港等) <span class="ui-li-aside">特價<strong>$250</strong></span> </a></li>  
+			</ul>
+			</div><!-- /footer -->
+		</div>
+		
+	</body>
+</html>

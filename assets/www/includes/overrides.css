@@ -1,0 +1,43 @@
+/*  CSS Document - jQuery Mobile Overrides                */
+/*  Written by Chris Converse - http://codifydesign.com   */
+
+/* Swatch A Overrides */
+.ui-page.ui-body-a.ui-page-active { background: #fff url(../images/Ripple.jpg) repeat 0px 0px; }
+//.ui-page.ui-body-a.ui-page-active .ui-header.ui-bar-a { display: none; }
+
+#home .ui-content { margin: 15px 15px 0px 15px; }
+
+#home .ui-listview { text-align: center; }
+#home .ui-listview .ui-btn {
+	width: 100px;
+	display: inline-block;
+	background: url(../images/home_buttons.png) no-repeat 0px 0px;
+	border: none;
+	margin: 10px 20px 10px 20px;
+	//float: left;
+}
+#home .ui-listview .ui-btn .ui-li { border: none; }
+#home .ui-listview .ui-btn .ui-li .ui-icon { display: none; }
+#home .ui-listview .ui-btn .ui-li .ui-link-inherit { color: white; font-size: 1.0em;  font-weight: bold; padding: 100px 0px 0px 0px; text-align: center; }
+
+#home .ui-listview .ui-btn.btn_a { background-position: 0px 0px; }
+#home .ui-listview .ui-btn.btn_s { background-position: -110px 0px; }
+#home .ui-listview .ui-btn.btn_l { background-position: -220px 0px; }
+#home .ui-listview .ui-btn.btn_c { background-position: -330px 0px; }
+#home .ui-listview .ui-btn.btn_r { background-position: -440px 0px; }
+#home .ui-listview .ui-btn.btn_m { background-position: -550px 0px; }
+
+/*
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+*/
+
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb{
+    min-height: 24px !important;
+	font-size:14px;
+
+}
