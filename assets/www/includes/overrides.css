@@ -2,7 +2,7 @@
 /*  Written by Chris Converse - http://codifydesign.com   */
 
 /* Swatch A Overrides */
-.ui-page.ui-body-a.ui-page-active { background: #fff url(../images/Ripple.jpg) repeat 0px 0px; }
+.ui-page.ui-body-a.ui-page-active { background: #fff url(../images/lubuntu.jpg) repeat 0px 0px; }
 //.ui-page.ui-body-a.ui-page-active .ui-header.ui-bar-a { display: none; }
 
 #home .ui-content { margin: 15px 15px 0px 15px; }
@@ -18,7 +18,7 @@
 }
 #home .ui-listview .ui-btn .ui-li { border: none; }
 #home .ui-listview .ui-btn .ui-li .ui-icon { display: none; }
-#home .ui-listview .ui-btn .ui-li .ui-link-inherit { color: white; font-size: 1.0em;  font-weight: bold; padding: 100px 0px 0px 0px; text-align: center; }
+#home .ui-listview .ui-btn .ui-li .ui-link-inherit { color: brown; font-size: 1.0em;  font-weight: bold; padding: 100px 0px 0px 0px; text-align: center; }
 
 #home .ui-listview .ui-btn.btn_a { background-position: 0px 0px; }
 #home .ui-listview .ui-btn.btn_s { background-position: -110px 0px; }
