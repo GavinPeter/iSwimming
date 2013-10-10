@@ -2,7 +2,9 @@
 /*  Written by Chris Converse - http://codifydesign.com   */
 
 /* Swatch A Overrides */
-.ui-page.ui-body-a.ui-page-active { background: #fff url(../images/lubuntu.jpg) repeat 0px 0px; }
+.ui-page.ui-body-a.ui-page-active {background: #fff url(../images/fish.jpg) repeat 0px 0px; }} 
+//{ background: #000}
+//background: #fff url(../images/tiling_stripes.gif) repeat 0px 0px; }
 //.ui-page.ui-body-a.ui-page-active .ui-header.ui-bar-a { display: none; }
 
 #home .ui-content { margin: 15px 15px 0px 15px; }
