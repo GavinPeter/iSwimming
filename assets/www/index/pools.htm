@@ -4,89 +4,26 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>附近泳池</title>
 		<meta name="viewport" content="width=device-width, height=device-height , initial-scale=1, maximum-scale=1.0, user-scalable=no"> 
-
-	<!--	 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script> -->
-		
 	</head>
-	<body>
-	
-<div data-role="page" id="pools">
-	<div data-role="header" >
-		<h1>游泳池查詢</h1>
-		<a href="#" data-rel="back" data-icon="arrow-l">返回</a>
-	</div><!-- /header -->
-	
-	<div data-role="content" >
+	<body>	
+		<div data-role="page" id="pools" data-title="附近泳池">
+
+			<div data-role="header" data-position="fixed">
+			<a href="#" data-rel="back" data-icon="arrow-l" >返回</a>
+			<h1>附近泳池</h1>
+			</div>
+			
+			<div data-role="content" style="width:100%; height:90%; padding:0;position:absolute" > 
+			<div id="map_canvas" style="width:100%; height:100%;"></div>
+
+			
+			<script type="text/javascript" src="../includes/pools.js"></script>
 		
-  	<script > 
-
-	$(function(){
-  			 	$('#twzipcode').twzipcode();
-		});
-
-		</script>
-
-	<div style="margin:5px;">1.選擇地區與類別：</div>
-	<div id="twzipcode"  style=" margin-right:10px;">
-       <select name="area" data-native-menu="false">
-      <option value="">所有區域</option>
-      <option value="M">我的位置</option>
-      <option value="北區">北區</option>
-      <option value="中區">中區</option>
-      <option value="南區">南區</option>
-      <option value="東區">東區</option>
-      <option value="離島">離島</option>
-      </select>	
-
-	<div id="sel_city_dist" >
-
-<fieldset class="ui-grid-a"  style="display:none;">
-    <div class="ui-block-a">
-	<select name="county" data-native-menu="false"  style="display:none;"></select> 
-  </div>
-	  <div class="ui-block-b">
-	<select name="district" data-native-menu="false" style="display:none;"></select> 
-	</div>
-</fieldset>
-
-	<!--<input name="zipcode" style="display:none;float:right;">-->
-	<select name="type"   data-native-menu="false" >
-        <option value="">類別</option>
-       <option value="1">50M標準水道</option>
-       <option value="2">未滿50M水道</option>
-       <option value="3">海水浴場</option>
-      </select>
-	</div>
-	
-  	<div style="margin:5px;clear:both;">2.選擇瀏覽方式：</div>
-		<div  >
-			<a data-role="button" href="#" data-icon="arrow-r" data-iconpos="right">列表模式 (離線瀏覽)</a>
-      <a data-role="button" href="pools/loc.htm"  data-icon="arrow-r" data-iconpos="right">地圖模式 (需網路)</a> <!--onClick="mapShow()"-->
-    </div>
-
-
-  </div>
-  <!-- /content -->
-  
-	<div data-role="footer" data-position="fixed">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="../index.htm" data-icon="info">首頁</a>
-						<li><a href="news.htm" data-icon="info">長泳消息</a></li>
-						<li><a href="tutorials.htm" data-icon="info">游泳教學</a></li>
-						<li><a href="lifeguard.htm" data-icon="grid">救生訓練</a></li>
-						<li><a href="tools.htm" data-icon="grid">游泳用具</a></li>
-					</ul>
-				</div><!-- /navbar -->
-		<ul data-role="listview" data-theme="e"> 
-		<li data-icon="false"><a href="#" >   <img src="http://tw.bid.yimg.com/ac/38/22/1247523021-ac-0065xf9x0600x0450-s.jpg" style="height: 100%;"  />長泳浮板(日月潭、外木山、烏石港等) <span class="ui-li-aside">特價<strong>$250</strong></span> </a></li>  
-		</ul>
-	</div><!-- /footer -->
-</div>
-
-
-		
-		
+			</div>
+			<div data-role="footer" data-position="fixed">
+			<script src="../includes/footer.js"></script>	
+			</div><!-- /footer -->
+		</div>	
 		
 	</body>
 </html>

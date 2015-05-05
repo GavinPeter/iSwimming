@@ -23,18 +23,14 @@ $(function(){
 				
 			}, function(error) {
 			
-				alert('沒有開啟定位功能或這個瀏覽器不支援');
+				$.get('https://maps.googleapis.com/maps/api/browserlocation/json?browser=chromium&sensor=true', function(data) { 
+				
+				google.maps.event.addDomListener(window, 'load', initialize( new google.maps.LatLng(data.location.lat, data.location.lng) ));
+				});
 			
-			},{timeout: 10000});
-		}else{
-			
-			alert('沒有開啟定位功能或這個瀏覽器不支援');
-			
+			},{timeout: 1000});
 		}
-			
-	 
-	
-			 
+		 
 			// google.maps.event.addDomListener(window, 'load', initialize( nowLatLng ));
 			 
 			
