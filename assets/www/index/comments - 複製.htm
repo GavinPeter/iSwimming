@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>立泳教學</title>
+		<meta name="viewport" content="width=device-width, height=device-height , initial-scale=1, maximum-scale=1.0, user-scalable=no"> 
+		 <link rel="stylesheet" href="includes/jquery.mobile-1.3.1.min.css" />
+		 <script src="includes/jquery.js"></script>
+		 <script src="includes/jquery.mobile-1.3.1.min.js"></script>
+	</head>
+	<body>	
+		<div data-role="page" id="comments" data-title="意見反饋">
+
+					<div data-role="header">
+						<h1>意見反饋</h1>
+						<a href="#" data-rel="back" data-icon="arrow-l" >返回</a>
+				</div>
+			<div data-role="content">
+            <form id="comment_form">
+                    <input type="hidden" name="user_id" value=""/>
+                    <textarea id="text_area_input" name="comment" placeholder="Enter a comment here."></textarea>
+                    <input type="submit" id="submit_comment" name="submit_comment" value="Post Comment"/>
+             </form>
+			</div>
+			<div data-role="footer" data-position="fixed">
+			<script src="../includes/footer.js"></script>	
+			</div><!-- /footer -->
+		</div>
+		
+	</body>
+</html>
