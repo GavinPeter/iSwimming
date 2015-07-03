@@ -1,10 +1,10 @@
 {
-  "name": "iSwimming",
+  "name": "Swimming Blogger Club",
   "main": "index.html",
   "version": "0.0.2",
   "single-instance": true,
   "window": {
-    "title": "Taiwan Travel Card",
+    "title": "悠泳部落客",
     "width": 400,
     "height": 640,
     "min_width": 384,
